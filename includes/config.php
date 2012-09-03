@@ -22,7 +22,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 
 //configuration variables
 $conf = array();
-$conf['db']['host'] = 'instance25751.db.xeround.com:16883';
+$conf['db']['host'] = 'int.instance25751.db.xeround.com:16883';
 $conf['db']['name'] = 'litpi';
 $conf['db']['user'] = 'litpitest';
 $conf['db']['pass'] = 'litpi';
