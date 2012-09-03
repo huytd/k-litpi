@@ -25,7 +25,7 @@ $conf = array();
 $conf['db']['host'] = 'instance25751.db.xeround.com:16883';
 $conf['db']['name'] = 'litpi';
 $conf['db']['user'] = 'litpitest';
-$conf['db']['pass'] = 'litpis';
+$conf['db']['pass'] = 'litpi';
 
 $conf['host'] = 'localhost/litpi';
 $conf['rooturl'] = 'http://' . $conf['host'] . '/';
