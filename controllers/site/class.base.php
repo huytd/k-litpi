@@ -9,7 +9,7 @@ Abstract Class Controller_Site_Base Extends Controller_Core_Base
 		
 		parent::__construct($registry);
 		$modelN = 'Core_'.$registry['controller'];
-		$this->Model = new $modelN();
+		if (class_exists($modelN)) $this->Model = new $modelN();
 	}
 
 	protected function notfound()

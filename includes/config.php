@@ -22,10 +22,10 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 
 //configuration variables
 $conf = array();
-$conf['db']['host'] = 'localhost';
+$conf['db']['host'] = 'instance25751.db.xeround.com:16883';
 $conf['db']['name'] = 'litpi';
-$conf['db']['user'] = 'root';
-$conf['db']['pass'] = '';
+$conf['db']['user'] = 'litpitest';
+$conf['db']['pass'] = 'litpi';
 
 $conf['host'] = 'localhost/litpi';
 $conf['rooturl'] = 'http://' . $conf['host'] . '/';
