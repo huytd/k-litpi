@@ -21,13 +21,26 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 
 
 //configuration variables
+$isDeploy = false;
 $conf = array();
-$conf['db']['host'] = 'int.instance25751.db.xeround.com:16883';
-$conf['db']['name'] = 'litpi';
-$conf['db']['user'] = 'litpitest';
-$conf['db']['pass'] = 'litpi';
-
-$conf['host'] = 'localhost/litpi';
+if ($isDeploy)
+{
+	$conf['db']['host'] = 'sql113.fall.vn';
+	$conf['db']['name'] = 'fall_10436547_litpi';
+	$conf['db']['user'] = 'fall_10436547';
+	$conf['db']['pass'] = 'kingbo';
+	
+	$conf['host'] = 'huytd.fall.vn';
+}
+else
+{
+	$conf['db']['host'] = 'localhost';
+	$conf['db']['name'] = 'litpi';
+	$conf['db']['user'] = 'root';
+	$conf['db']['pass'] = '';
+	
+	$conf['host'] = 'localhost/litpi';
+}
 $conf['rooturl'] = 'http://' . $conf['host'] . '/';
 $conf['rooturl_admin'] = 'http://' . $conf['host'] . '/admin/';
 
